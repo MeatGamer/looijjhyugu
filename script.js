@@ -45,3 +45,46 @@ function shortestWord(text) {
 }
 
 console.log(shortestWord("I make my own yogurt"));
+
+
+
+
+
+
+
+
+
+
+
+let arr = [10, 10, 10, 10];
+let sum = 0;
+for (let i = 0; i < arr.length; i++) {
+  sum += arr[i];
+}
+console.log(sum)
+
+
+
+
+let array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let b = array.filter(x => x % 2 == 0); 
+console.log(b);
+
+
+
+
+
+function longestword(text) {
+  let words = text.split(" ");
+  let longest = words[0];
+
+  for (let i = 1; i < words.length; i++) {
+    if (words[i].length > longest.length) {
+      longest = words[i];
+    }
+  }
+
+  return longest;
+}
+
+console.log(longestword("I make my own yogurt"));
